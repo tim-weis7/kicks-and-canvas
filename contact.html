@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Kicks & Canvas | Kontakt</title>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preload" href="images/background.jpg" as="image">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "24rty0jI-5F3MD3Mg",
+            });
+        })();
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <img src="images/menueLine.png" alt="Line 1" class="nav-line">
+                <img src="images/menueLine180degree.png" alt="Line 2" class="nav-line">
+                <img src="images/menueLine.png" alt="Line 3" class="nav-line">
+            </label>
+            <a href="index.html" class="logo-link">
+                <img src="images/kAcLogo.png" alt="Logo" class="navLogo">
+            </a>
+            <ul>
+                <li><a href="about.html">ÜBER MICH</a></li>
+                <li><a href="galery.html">GALERIE</a></li>
+                <li><a class="active" href="contact.html">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Kontakt</h1>
+        </br>
+
+        <div id="loadingOverlay" style="display: none;">
+            <div id="loadingSpinner"></div>
+        </div>
+
+        <input type="text" id="name" name="name" placeholder="Name*" class="custom-input" maxlength="35"required oninput="checkForm()"><br>
+        <input type="email" id="email_id" name="email" placeholder="E-Mail Adresse*" class="custom-input" maxlength="50" required oninput="checkForm()"><br>
+        <input type="text" id="subject" name="subject" placeholder="Betreff*" class="custom-input" maxlength="70" required oninput="checkForm()"><br>
+        <div class="lblMessage">
+            <label for="nachricht" style="margin-top: 10px;">Deine Nachricht*</label><br>
+        </div>
+        <textarea id="message" name="nachricht" rows="4" maxlength="1000" required oninput="updateCount(); checkForm()"></textarea><br>
+        <div id="charCount">1000/1000</div>
+        <button class="btnSend" id="submitButton" onclick="sendMail()" disabled>0% ausgefüllt</button>
+
+        <div id="overlay">
+            <div id="overlay-message">
+                <p id="messageSuccess">NACHRICHT ERFOLGREICH ÜBERMITTELT</p>
+            </div>
+        </div>
+        <div id="overlay-two">
+            <div id="overlay-message-failed">
+                <p id="messageFailed">NACHRICHT KONNTE NICHT ÜBERMITTELT WERDEN. BITTE VERSUCHEN SIE ES ERNEUT.</p>
+            </div>
+        </div>
+    </main>
+</body>
+<footer>
+    <div class="footerContainer">
+        <div class="line"></div>
+    </br>
+        <div class="button-container">
+            <a href="impressum.html" class="btnFooter">Impressum</a>
+            <span class="separator">|</span>
+            <a href="datenschutz.html" class="btnFooter">Datenschutz</a>
+            <span class="separator">|</span>
+            <a href="contact.html" class="btnFooter">Kontakt</a>
+        </div>
+        <div class="socialmedia-container">
+            <a href="https://www.instagram.com/fs.kicks.and.canvas/" target="_blank" title="@fs.kicks.and.canvas">
+                <img src="images/icons-instagram-96px.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@kicks.and.canvas" target="_blank" title="@kicks.and.canvas">
+                <img src="images/icons-tiktok-128px.png" alt="TikTok">
+            </a>
+        </div>
+     </div>
+</footer>
+
+</html>

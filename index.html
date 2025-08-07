@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="Fabienne Seewald - Artworks auf Leinwand, Custom Sneaker, Digital Art und Media Design" />
+    <title>Kicks & Canvas</title>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preload" href="images/background.jpg" as="image">
+    <link rel="preload" href="videos/gif-home-16-9-new.gif" as="image">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header class="no-box-shadow" style="position: relative;">
+        <img src="images/kAcLogo.png" alt="kAcLogo" id="indexLogo">
+        <nav id="nav-home">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <img src="images/menueLine.png" alt="Line 1" class="nav-line">
+                <img src="images/menueLine180degree.png" alt="Line 2" class="nav-line">
+                <img src="images/menueLine.png" alt="Line 3" class="nav-line">
+            </label>
+            <ul>
+                <li><a href="about.html">ÜBER MICH</a></li>
+                <li><a href="galery.html">GALERIE</a></li>
+                <li><a href="contact.html">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="gif-container">
+        <picture>
+            <source srcset="videos/gif-home-16-9.gif" media="(min-width: 510px)">
+            <img src="videos/gif-home-16-9-new.gif" id="loadingGif" alt="Your GIF" class="responsive-gif">
+        </picture>
+        <div class="overlay"></div>
+    </div>
+    <main>
+        <h1>Leistungen</h1>
+        <div class="home-content-container">
+            <a href="galery.html#artworks" class="home-images-container">
+                <img src="images/home-images/home-image-1.jpg">
+                <h3>ARTWORKS</h3>
+                <div class="home-images-overlay"></div>
+            </a>
+            <a href="galery.html#custom-sneaker" class="home-images-container">
+                <img src="images/home-images/home-image-2.JPG">
+                <h3>CUSTOM SNEAKER</h3>
+                <div class="home-images-overlay"></div>
+            </a>
+            <a href="galery.html#digital-art" class="home-images-container">
+                <img src="images/home-images/home-image-3.jpg">
+                <h3>DIGITAL ART</h3>
+                <div class="home-images-overlay"></div>
+            </a>
+            <a href="galery.html#media-design" class="home-images-container">
+                <h3>MEDIA DESIGN</h3>
+                <div class="home-images-overlay"></div>
+            </a>
+        </div>
+        
+    </main>
+</body>
+<footer>
+    <div class="footerContainer">
+        <div class="line"></div>
+    </br>
+        <div class="button-container">
+            <a href="impressum.html" class="btnFooter">Impressum</a>
+            <span class="separator">|</span>
+            <a href="datenschutz.html" class="btnFooter">Datenschutz</a>
+            <span class="separator">|</span>
+            <a href="contact.html" class="btnFooter">Kontakt</a>
+        </div>
+        <div class="socialmedia-container">
+            <a href="https://www.instagram.com/fs.kicks.and.canvas/" target="_blank" title="@fs.kicks.and.canvas">
+                <img src="images/icons-instagram-96px.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@kicks.and.canvas" target="_blank" title="@kicks.and.canvas">
+                <img src="images/icons-tiktok-128px.png" alt="TikTok">
+            </a>
+        </div>
+     </div>
+</footer>
+
+</html> 

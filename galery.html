@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>Kicks & Canvas | Galerie</title>
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preload" href="images/background.jpg" as="image">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+              <img src="images/menueLine.png" alt="Line 1" class="nav-line">
+              <img src="images/menueLine180degree.png" alt="Line 2" class="nav-line">
+              <img src="images/menueLine.png" alt="Line 3" class="nav-line">
+            </label>
+            <a href="index.html" class="logo-link">
+                <img src="images/kAcLogo.png" alt="Logo" class="navLogo">
+            </a>
+            <ul>
+                <li><a href="about.html">ÜBER MICH</a></li>
+                <li><a class="active" href="galery.html">GALERIE</a></li>
+                <li><a href="contact.html">KONTAKT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>Galerie</h1>
+
+        <nav class="gallery-nav-distance">
+            <div class="gallery-nav-distance">
+            <div class="gallery-navigation">
+                <a href="#artworks" class="gallery-nav">Artworks |</a>
+                <a href="#custom-sneaker" class="gallery-nav">Custom Sneaker</a>
+            </div>
+
+            <div class="gallery-navigation">
+                <a href="#digital-art" class="gallery-nav">Digital Art |</a>
+                <a href="#media-design" class="gallery-nav">Media Design</a>
+            </div>
+        </div>
+        </nav>
+
+        <section id="artworks">
+            <div class="puffer-container"></div>
+            <div class="gallery-header-two">
+                <h2>Artworks</h2>
+            </div>
+            <div class="carousel">
+                <input type="radio" name="carousel-artworks" id="artworks-img1" checked>
+                <input type="radio" name="carousel-artworks" id="artworks-img2">
+                <input type="radio" name="carousel-artworks" id="artworks-img3">
+                <input type="radio" name="carousel-artworks" id="artworks-img4">
+
+                <div class="carousel-images">
+                    <div class="carousel-item">
+                        <label for="artworks-img1">
+                            <div class="image-container">
+                                <img src="images/artworks/artworks-1.jpg" alt="Artwork 1">
+                            </div>
+                            <p class="image-caption-main">"WALDGEIST DER STADT"</p>
+                            <p class="image-caption">Acryl auf Leinwand, 100 x 120 cm</p>
+                            <p class="image-caption">Preis auf Anfrage</p>
+                        </label>
+                    </div>
+                    <div class="carousel-item">
+                        <label for="artworks-img2">
+                            <div class="image-container">
+                                <img src="images/artworks/artworks-2.jpg" alt="Artwork 2">
+                            </div>
+                            <p class="image-caption-main">"BLUE SHADES"</p>
+                            <p class="image-caption">Acryl auf Leinwand, 25 x 30 cm</p>
+                            <p class="image-caption">In Arbeit | Preis auf Anfrage</p>
+                        </label>
+                    </div>
+                    <div class="carousel-item">
+                        <label for="artworks-img3">
+                            <div class="image-container">
+                                <img src="images/artworks/artworks-3.jpg" alt="Artwork 3">
+                            </div>
+                            <p class="image-caption-main">"HARLEY"</p>
+                            <p class="image-caption">Zeichnung, 60 x 40 cm</p>
+                            <p class="image-caption">Auftragsarbeit</p>
+                        </label>
+                    </div>
+                    <div class="carousel-item">
+                        <label for="artworks-img4">
+                            <div class="image-container">
+                                <img src="images/artworks/artworks-4.jpg" alt="Artwork 4">
+                            </div>
+                            <p class="image-caption-main">"MONOCHROM"</p>
+                            <p class="image-caption">Zeichnung, 50 x 50 cm</p>
+                            <p class="image-caption">Auftragsarbeit</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <label for="artworks-img1" class="indicator"></label>
+                    <label for="artworks-img2" class="indicator"></label>
+                    <label for="artworks-img3" class="indicator"></label>
+                    <label for="artworks-img4" class="indicator"></label>
+                </div>
+            </div>  
+        </section>
+
+        <section id="custom-sneaker">
+            <div class="puffer-container"></div>
+            <div class="gallery-header">
+                <h2>Custom Sneaker</h2>
+            </div>
+            <div class="carousel">
+                <input type="radio" name="carousel-custom-sneaker" id="sneaker-img1" checked>
+                <input type="radio" name="carousel-custom-sneaker" id="sneaker-img2">
+                <input type="radio" name="carousel-custom-sneaker" id="sneaker-img3">
+                <input type="radio" name="carousel-custom-sneaker" id="sneaker-img4">
+                <input type="radio" name="carousel-custom-sneaker" id="sneaker-img5">
+                <input type="radio" name="carousel-custom-sneaker" id="sneaker-img6">
+                <input type="radio" name="carousel-custom-sneaker" id="sneaker-img7">
+                
+                <div class="carousel-images">
+                    <div class="carousel-item-two">
+                        <label for="sneaker-img1">
+                            <div class="image-container-two">
+                                <img src="images/custom-sneaker/custom-sneaker-1.png" alt="Custom Sneaker 1">
+                            </div>
+                            <p class="image-caption-main">"ROSY BEIGE"</p>
+                            <p class="image-caption">Eigenes Design</p>
+                        </label>
+                    </div>
+                    <div class="carousel-item-two">
+                        <label for="sneaker-img2">
+                            <div class="image-container-two">
+                                <img src="images/custom-sneaker/custom-sneaker-2.png" alt="Custom Sneaker 2">
+                            </div>
+                            <p class="image-caption-main">"GRAY MARBLE"</p>
+                            <p class="image-caption">Auftragsarbeit</p>
+                        </label>
+                    </div>
+                    <div class="carousel-item-two">
+                        <label for="sneaker-img3">
+                            <div class="image-container-two">
+                                <img src="images/custom-sneaker/custom-sneaker-3.png" alt="Custom Sneaker 3">
+                            </div>
+                            <p class="image-caption-main">"Für Lia"</p>
+                            <p class="image-caption">Eigenes Design</p>
+                        </label>
+                    </div>
+                    <div class="carousel-item-two">
+                        <label for="sneaker-img4">
+                            <div class="image-container-two">
+                                <img src="images/custom-sneaker/custom-sneaker-4.png" alt="Custom Sneaker 4">
+                            </div>
+                            <p class="image-caption-main">"TY"</p>
+                            <p class="image-caption">Auftragsarbeit</p>
+                        </label>
+                    </div>
+                    <div class="carousel-item-two">
+                        <label for="sneaker-img5">
+                            <div class="image-container-two">
+                                <img src="images/custom-sneaker/custom-sneaker-5.png" alt="Custom Sneaker 5">
+                            </div>
+                            <p class="image-caption-main">"DRIPPIN"</p>
+                            <p class="image-caption">Auftragsarbeit</p>
+                        </label>
+                    </div>
+                    <div class="carousel-item-two">
+                        <label for="sneaker-img6">
+                            <div class="image-container-two">
+                                <img src="images/custom-sneaker/custom-sneaker-6.png" alt="Custom Sneaker 6">
+                            </div>
+                            <p class="image-caption-main">"SILVER SWIRL"</p>
+                            <p class="image-caption">Auftragsarbeit</p>
+                        </label>
+                    </div>
+                    <div class="carousel-item-two">
+                        <label for="sneaker-img7">
+                            <div class="image-container-two">
+                                <img src="images/custom-sneaker/custom-sneaker-7.png" alt="Custom Sneaker 7">
+                            </div>
+                            <p class="image-caption-main">"MIDNIGHT SNOWFALL"</p>
+                            <p class="image-caption">Auftragsarbeit</p>
+                        </label>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <label for="sneaker-img1" class="indicator"></label>
+                    <label for="sneaker-img2" class="indicator"></label>
+                    <label for="sneaker-img3" class="indicator"></label>
+                    <label for="sneaker-img4" class="indicator"></label>
+                    <label for="sneaker-img5" class="indicator"></label>
+                    <label for="sneaker-img6" class="indicator"></label>
+                    <label for="sneaker-img7" class="indicator"></label>
+                </div>
+            </div>
+        </section>
+
+        <section id="digital-art">
+            <div class="puffer-container"></div>
+            <div class="gallery-header">
+                <h2>Digital Art</h2>
+            </div>
+            <div class="carousel">
+                <input type="radio" name="carousel-digital-art" id="digital-img1" checked>
+                <input type="radio" name="carousel-digital-art" id="digital-img2">
+                <input type="radio" name="carousel-digital-art" id="digital-img3">
+                <input type="radio" name="carousel-digital-art" id="digital-img4">
+                <input type="radio" name="carousel-digital-art" id="digital-img5">
+                <input type="radio" name="carousel-digital-art" id="digital-img6">
+
+                <div class="carousel-images">
+                    <div class="carousel-item-four">
+                        <label for="digital-img1">
+                            <div class="image-container-four">
+                                <img src="images/digital-art/digital-art-1.jpg" alt="Digital Art 1">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="carousel-item-four">
+                        <label for="digital-img2">
+                            <div class="image-container-four">
+                                <img src="images/digital-art/digital-art-2.jpg" alt="Digital Art 2">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="carousel-item-four">
+                        <label for="digital-img3">
+                            <div class="image-container-four">
+                                <img src="images/digital-art/digital-art-3.PNG" alt="Digital Art 3">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="carousel-item-four">
+                        <label for="digital-img4">
+                            <div class="image-container-four">
+                                <img src="images/digital-art/digital-art-4.JPG" alt="Digital Art 4">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="carousel-item-four">
+                        <label for="digital-img5">
+                            <div class="image-container-four">
+                                <img src="images/digital-art/digital-art-5.JPG" alt="Digital Art 5">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="carousel-item-four">
+                        <label for="digital-img6">
+                            <div class="image-container-four">
+                                <img src="images/digital-art/digital-art-6.PNG" alt="Digital Art 6">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <label for="digital-img1" class="indicator"></label>
+                    <label for="digital-img2" class="indicator"></label>
+                    <label for="digital-img3" class="indicator"></label>
+                    <label for="digital-img4" class="indicator"></label>
+                    <label for="digital-img5" class="indicator"></label>
+                    <label for="digital-img6" class="indicator"></label>
+                </div>
+            </div>
+        </section>
+
+        <section id="media-design">
+            <div class="puffer-container"></div>
+            <div class="gallery-header">
+                <h2>Media Design</h2>
+            </div>
+            <div class="entwicklerContainer">
+                <img src="images/bild-folgt.jpg" alt="Me" id="entwicklerLogo">
+            </div>
+        </section>
+    
+    </main>
+</body>
+<footer>
+    <div class="footerContainer">
+        <div class="line"></div>
+    </br>
+        <div class="button-container">
+            <a href="impressum.html" class="btnFooter">Impressum</a>
+            <span class="separator">|</span>
+            <a href="datenschutz.html" class="btnFooter">Datenschutz</a>
+            <span class="separator">|</span>
+            <a href="contact.html" class="btnFooter">Kontakt</a>
+        </div>
+        <div class="socialmedia-container">
+            <a href="https://www.instagram.com/fs.kicks.and.canvas/" target="_blank" title="@fs.kicks.and.canvas">
+                <img src="images/icons-instagram-96px.png" alt="Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@kicks.and.canvas" target="_blank" title="@kicks.and.canvas">
+                <img src="images/icons-tiktok-128px.png" alt="TikTok">
+            </a>
+        </div>
+     </div>
+</footer>
+
+</html>
